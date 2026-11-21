@@ -1,5 +1,7 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
 using System.Dynamic;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace assignment
 {
@@ -33,8 +35,22 @@ namespace assignment
             #endregion
 
             #region question 4
-
-
+            //Write code that divides 10 by 0 inside a try block, catches the exception,
+            //prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int x = 5;
+                int y = 0;
+                int test = (x / y);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("done");
+            }
             #endregion
         }
     }
