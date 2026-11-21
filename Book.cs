@@ -8,10 +8,10 @@ namespace assignment
     {
         public string title {  get; set; }
         public int pages { get; set; }
-        public override string ToString()
-        {
-            return $"title :{title}, pages :{pages}";
-        }
+        //public override string ToString()
+        //{
+        //    return $"title :{title}, pages :{pages}";
+        //}
 
     }
 }
