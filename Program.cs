@@ -37,20 +37,27 @@ namespace assignment
             #region question 4
             //Write code that divides 10 by 0 inside a try block, catches the exception,
             //prints "Cannot divide by zero", and then prints "Done" in a finally block.
-            try
-            {
-                int x = 5;
-                int y = 0;
-                int test = (x / y);
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("cannot divide by zero");
-            }
-            finally
-            {
-                Console.WriteLine("done");
-            }
+            ///try
+            ///{
+            ///    int x = 5;
+            ///    int y = 0;
+            ///   int test = (x / y);
+            ///}
+            ///catch (DivideByZeroException)
+            ///{
+            ///    Console.WriteLine("cannot divide by zero");
+            ///}
+            ///finally
+            ///{
+            ///    Console.WriteLine("done");
+            ///}
+            #endregion
+
+            #region question 5
+            //Declare an int pages = 300; then store it in a double variable without using a cast.
+            int pages = 300;
+            double var = pages;
+            Console.WriteLine(var);
             #endregion
         }
     }
