@@ -75,17 +75,34 @@ namespace assignment
             #endregion
 
             #region question 8
-            // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";
-            //, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            int No1 = int.Parse(yearText);
-            Console.WriteLine(No1);
+            /// Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";
+            ///, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            ///string yearText = "2023";
+            ///int No1 = int.Parse(yearText);
+            ///Console.WriteLine(No1);
 
-            string badText = "abc";
-            if (int.TryParse(badText, out int No2))
-                Console.WriteLine(No2);
-            else
-                Console.WriteLine("invalid number");
+            ///string badText = "abc";
+            ///if (int.TryParse(badText, out int No2))
+            ///    Console.WriteLine(No2);
+            ///else
+            ///    Console.WriteLine("invalid number");
+            #endregion
+
+            #region question 9
+            //Given int pages = 464;, convert it into a string using ToString()
+            //and print its type using GetType() to prove it's now a string.
+            ///int pages = 464;
+            ///string str = pages.ToString();
+            ///Console.WriteLine(str.GetType());
+            #endregion
+
+            #region question 10
+            // Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            int copies = 100;
+            object boxed = copies;
+            int unboxed = (int)boxed;
+            Console.WriteLine(boxed);
+            Console.WriteLine(unboxed);
             #endregion
         }
     }
