@@ -62,12 +62,16 @@ namespace assignment
 
             #region question 6
             //  Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int castingValue = (int)price;
-            Console.WriteLine(castingValue);
+            ///double price = 49.99;
+            ///int castingValue = (int)price;
+            ///Console.WriteLine(castingValue);
+            #endregion
 
-
-
+            #region question 7
+            // Given string pagesText = "464";, convert it into an int using the Convert class.
+            string pagesText = "464";
+            int No = Convert.ToInt32(pagesText);
+            Console.WriteLine(No);
             #endregion
         }
     }
