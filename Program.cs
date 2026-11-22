@@ -128,11 +128,19 @@ namespace assignment
             #region question 14
             //Using title from the previous question, use ?? to print "Untitled" if title is null.
             //Then use ??= to assign title the value "Untitled" only if it's still null.
-            Book? book = null;
-            string? title = book?.title;
-            Console.WriteLine(title ?? "untitled");
-            title ??= "untitled";
-            Console.WriteLine(title);
+            ///Book? book = null;
+            ///string? title = book?.title;
+            ///Console.WriteLine(title ?? "untitled");
+            ///title ??= "untitled";
+            ///Console.WriteLine(title);
+            #endregion
+
+            #region question 15
+            //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable
+            //string confirmedName using the ! operator.
+            string? name = "Ahmed";
+            string sure = name!;
+            Console.WriteLine(sure);
             #endregion
         }
     }
