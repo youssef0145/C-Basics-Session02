@@ -115,8 +115,14 @@ namespace assignment
 
             #region question 12
             //Declare a string? reviewer = null;. Print whether it is null.
-            string? reviewer = null;
-            Console.WriteLine(reviewer==null);
+            ///string? reviewer = null;
+            ///Console.WriteLine(reviewer==null);
+            #endregion
+
+            #region question 13
+            //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result.
+            Book? book = null;
+            Console.WriteLine(book?.title);
             #endregion
         }
     }
