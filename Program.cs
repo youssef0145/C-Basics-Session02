@@ -55,9 +55,19 @@ namespace assignment
 
             #region question 5
             //Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            double var = pages;
-            Console.WriteLine(var);
+            ///int pages = 300;
+            ///double var = pages;
+            ///Console.WriteLine(var);
+            #endregion
+
+            #region question 6
+            //  Declare a double price = 49.99; then convert it into an int using a cast.
+            double price = 49.99;
+            int castingValue = (int)price;
+            Console.WriteLine(castingValue);
+
+
+
             #endregion
         }
     }
