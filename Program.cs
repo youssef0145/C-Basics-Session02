@@ -69,9 +69,23 @@ namespace assignment
 
             #region question 7
             // Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int No = Convert.ToInt32(pagesText);
-            Console.WriteLine(No);
+            ///string pagesText = "464";
+            ///int No = Convert.ToInt32(pagesText);
+            ///Console.WriteLine(No);
+            #endregion
+
+            #region question 8
+            // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";
+            //, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string yearText = "2023";
+            int No1 = int.Parse(yearText);
+            Console.WriteLine(No1);
+
+            string badText = "abc";
+            if (int.TryParse(badText, out int No2))
+                Console.WriteLine(No2);
+            else
+                Console.WriteLine("invalid number");
             #endregion
         }
     }
