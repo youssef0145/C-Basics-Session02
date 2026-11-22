@@ -98,11 +98,19 @@ namespace assignment
 
             #region question 10
             // Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
-            int copies = 100;
-            object boxed = copies;
-            int unboxed = (int)boxed;
-            Console.WriteLine(boxed);
-            Console.WriteLine(unboxed);
+            ///int copies = 100;
+            ///object boxed = copies;
+            ///int unboxed = (int)boxed;
+            ///Console.WriteLine(boxed);
+            ///Console.WriteLine(unboxed);
+            #endregion
+
+            #region question 11
+            //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its
+            int? year = null;
+            Console.WriteLine(year.HasValue);
+            year = 2023;
+            Console.WriteLine(year.Value);
             #endregion
         }
     }
