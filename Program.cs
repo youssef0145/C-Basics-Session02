@@ -121,8 +121,18 @@ namespace assignment
 
             #region question 13
             //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result.
+            ///Book? book = null;
+            ///Console.WriteLine(book?.title);
+            #endregion
+
+            #region question 14
+            //Using title from the previous question, use ?? to print "Untitled" if title is null.
+            //Then use ??= to assign title the value "Untitled" only if it's still null.
             Book? book = null;
-            Console.WriteLine(book?.title);
+            string? title = book?.title;
+            Console.WriteLine(title ?? "untitled");
+            title ??= "untitled";
+            Console.WriteLine(title);
             #endregion
         }
     }
